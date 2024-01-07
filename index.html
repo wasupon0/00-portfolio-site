@@ -35,11 +35,11 @@
               </a>
             </li>
 
-            <li class="nav__item">
+            <!--             <li class="nav__item">
               <a href="#about" class="nav__link">
                 <i class="uil uil-user nav__icon"></i> About
               </a>
-            </li>
+            </li> -->
 
             <li class="nav__item">
               <a href="#skills" class="nav__link">
@@ -103,13 +103,13 @@
                 <i class="uil uil-github-alt"></i>
               </a>
 
-              <a
+              <!--               <a
                 href="https://github.com/wasupon0"
                 target="_blank"
                 class="home__social-icon"
               >
                 <i class="uil uil-twitter-alt"></i>
-              </a>
+              </a> -->
             </div>
 
             <div class="home__img">
@@ -141,17 +141,24 @@
               <h1 class="home__title">Hi, I'm Wasupon</h1>
               <h3 class="home__subtitle">Software Engineer</h3>
               <p class="home__description">
-                High level experience in web design and development knowledge,
-                producing quality work.
+                I am a passionate and results-driven software engineer. I have
+                experienced and worked on a variety of projects, including
+                websites, mobile apps, and managing containerized applications
+                for cloud deployment.
               </p>
-              <a href="#contact" class="button button--flex">
-                Contact Me <i class="uil uil-message button__icon"></i>
+
+              <a
+                download=""
+                href="assets/pdf/Wasupon-CV.pdf"
+                class="button button--flex"
+              >
+                Download CV <i class="uil uil-download-alt button__icon"></i>
               </a>
             </div>
           </div>
 
           <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
+            <a href="#skills" class="home__scroll-button button--flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
               <span class="home__scroll-name">Scroll down</span>
               <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -161,7 +168,7 @@
       </section>
 
       <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
+      <!--       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
 
@@ -204,20 +211,9 @@
                 >
               </div>
             </div>
-
-            <div class="about__buttons">
-              <!--==================== Change your CV ====================-->
-              <a
-                download=""
-                href="assets/pdf/Wasupon-CV.pdf"
-                class="button button--flex"
-              >
-                Download CV <i class="uil uil-download-alt button__icon"></i>
-              </a>
-            </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
@@ -242,41 +238,61 @@
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">HTML</h3>
-                    <img
-                      src="./assets/img/resume-icons/file_type_html.svg"
-                      width="32 px"
-                    />
+                    <h3 class="skills__name">JavaScript / TypeScript</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/file-type-js-official.svg"
+                        width="32 px"
+                      />
+                      <img
+                        src="./assets/img/resume-icons/file_type_typescript_official.svg"
+                        width="32 px"
+                      />
+                    </div>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">CSS</h3>
-                    <img
-                      src="./assets/img/resume-icons/file_type_css.svg"
-                      width="32 px"
-                    />
+                    <h3 class="skills__name">HTML / CSS</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/file_type_html.svg"
+                        width="32 px"
+                      />
+                      <img
+                        src="./assets/img/resume-icons/file_type_css.svg"
+                        width="32 px"
+                      />
+                    </div>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">JavaScript</h3>
-                    <img
-                      src="./assets/img/resume-icons/file-type-js-official.svg"
-                      width="32 px"
-                    />
+                    <h3 class="skills__name">React / Next.js</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/react.svg"
+                        width="32 px"
+                      />
+                      <img
+                        src="./assets/img/resume-icons/nextjs-light.svg"
+                        width="32 px"
+                      />
+                    </div>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__react"></span>
+                    <h3 class="skills__name">Figma</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/figma.svg"
+                        width="32 px"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -285,11 +301,11 @@
             <!--=============== SKILLS 2 ===============-->
             <div class="skills__content skills__close">
               <div class="skills__header">
-                <i class="uil uil-server-network skills__icon"></i>
+                <i class="uil uil-swatchbook skills__icon"></i>
 
                 <div>
-                  <h1 class="skills__title">DevOps / Backend</h1>
-                  <span class="skills__subtitle">About 1 year</span>
+                  <h1 class="skills__title">CI/CD</h1>
+                  <span class="skills__subtitle">Version control</span>
                 </div>
 
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -298,51 +314,29 @@
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Node.js</h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__php"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">PostgreSQL</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__node"></span>
+                    <h3 class="skills__name">GitHub / GitLab</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/github-light.svg"
+                        width="32 px"
+                      />
+                      <img
+                        src="./assets/img/resume-icons/gitlab.svg"
+                        width="32 px"
+                      />
+                    </div>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Firebase</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__firebase"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Windows Server</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__firebase"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Ubuntu / Bash</h3>
-                    <span class="skills__number">55%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__python"></span>
+                    <h3 class="skills__name">Jenkins</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/jenkins.svg"
+                        width="32 px"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -351,6 +345,90 @@
 
           <div>
             <!--=============== SKILLS 3 ===============-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-server-network skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">DevOps / Backend</h1>
+                  <span class="skills__subtitle">More than 1 year</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Bash</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/bash-light.svg"
+                        width="32 px"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Ansible</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/ansible_mod.svg"
+                        width="32 px"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">PostgreSQL</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/postgresql.svg"
+                        width="32 px"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Docker / Kubernetes</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/file-type-docker.svg"
+                        width="32 px"
+                      />
+                      <img
+                        src="./assets/img/resume-icons/kubernetes.svg"
+                        width="32 px"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Amazon S3</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/aws-light.svg"
+                        width="32 px"
+                      />
+                      <img
+                        src="./assets/img/resume-icons/aws-s3.svg"
+                        width="32 px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--=============== SKILLS 4 ===============-->
             <div class="skills__content skills__close">
               <div class="skills__header">
                 <i class="uil uil-mobile-android skills__icon"></i>
@@ -367,86 +445,24 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">iOS / Swift</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__figma"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">React Native</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__sketch"></span>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/swift.svg"
+                        width="32 px"
+                      />
+                    </div>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Flutter / Dart</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__photoshop"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--=============== SKILLS 4 ===============-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="uil uil-swatchbook skills__icon"></i>
-
-                <div>
-                  <h1 class="skills__title">Others</h1>
-                  <span class="skills__subtitle">Relevant Skills</span>
-                </div>
-
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Figma</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__figma"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Photoshop</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__sketch"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Vegas Pro, video editing</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__sketch"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Japanese Conversational</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__photoshop"></span>
+                    <h3 class="skills__name">Xcode</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/xcode.svg"
+                        width="32 px"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -489,11 +505,11 @@
               <!--=============== QUALIFICATION 1 ===============-->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Application Engineer</h3>
+                  <h3 class="qualification__title">Cloud Engineer / DevOps</h3>
                   <span class="qualification__subtitle">Microsoft - Japan</span>
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
-                    2020-2022
+                    2023-2024
                   </div>
                 </div>
 
@@ -509,35 +525,20 @@
 
                 <div class="qualification__time">
                   <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
+                  <!-- <span class="qualification__line"></span> -->
                 </div>
 
                 <div>
-                  <h3 class="qualification__title">Software Developer</h3>
+                  <h3 class="qualification__title">Application Engineer</h3>
                   <span class="qualification__subtitle">Apple Inc - Japan</span>
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
-                    2022-2024
+                    2020-2023
                   </div>
                 </div>
               </div>
 
               <!--=============== QUALIFICATION 3 ===============-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Front-End Engineer</h3>
-                  <span class="qualification__subtitle">Figma - Japan</span>
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2024-2028
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <!-- <span class="qualification__line"></span> -->
-                </div>
-              </div>
             </div>
 
             <!--=============== QUALIFICATION CONTENT 2 EDUCATION ===============-->
@@ -545,7 +546,9 @@
               <!--=============== QUALIFICATION 1 ===============-->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Computer Engineering</h3>
+                  <h3 class="qualification__title">
+                    B.E. COMPUTER ENGINEERING
+                  </h3>
                   <span class="qualification__subtitle"
                     >Japan - University</span
                   >
@@ -571,11 +574,13 @@
                 </div>
 
                 <div>
-                  <h3 class="qualification__title">Web Design</h3>
+                  <h3 class="qualification__title">
+                    Exchange Program in France
+                  </h3>
                   <span class="qualification__subtitle">Japan - Institute</span>
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
-                    2020 - 2021
+                    2nd Semester 2019
                   </div>
                 </div>
               </div>
@@ -583,36 +588,19 @@
               <!--=============== QUALIFICATION 3 ===============-->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Web Development</h3>
+                  <h3 class="qualification__title">
+                    Exchange Program in United States
+                  </h3>
                   <span class="qualification__subtitle">Japan - Institute</span>
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
-                    2021 - 2022
+                    2014 - 2015
                   </div>
                 </div>
 
                 <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-
-              <!--=============== QUALIFICATION 4 ===============-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div class="qualification__time">
                   <span class="qualification__rounder"></span>
                   <!-- <span class="qualification__line"></span> -->
-                </div>
-
-                <div>
-                  <h3 class="qualification__title">Master in UI/UX</h3>
-                  <span class="qualification__subtitle">Japan - Institute</span>
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2022 - 2023
-                  </div>
                 </div>
               </div>
             </div>
@@ -883,7 +871,7 @@
               <i class="uil uil-envelope contact__icon"></i>
               <div>
                 <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">niabworld@gmail.com</span>
+                <span class="contact__subtitle">wasupon.mail@gmail.com</span>
               </div>
             </div>
 
@@ -971,13 +959,13 @@
             >
               <i class="uil uil-github-alt"></i>
             </a>
-            <a
+            <!--             <a
               href="https://github.com/wasupon0"
               target="_blank"
               class="footer__social"
             >
               <i class="uil uil-twitter-alt"></i>
-            </a>
+            </a> -->
           </div>
         </div>
 
