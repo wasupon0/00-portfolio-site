@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--==================== UNICONS ====================-->
+
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
 
-    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"> -->
-
-    <!--==================== SWIPER CSS====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css"
+    />
 
     <!--==================== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -48,14 +49,8 @@
             </li>
 
             <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Services
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              <a href="#projects" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Projects
               </a>
             </li>
 
@@ -88,6 +83,14 @@
           <div class="home__content grid">
             <div class="home__social">
               <a
+                href="mailto: wasupon.mail@gmail.com"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-envelope"></i>
+              </a>
+
+              <a
                 href="https://www.linkedin.com/in/wasupon-p-90a991279/"
                 target="_blank"
                 class="home__social-icon"
@@ -118,10 +121,10 @@
                   <path d="M0 0 L500 0 L0 500 Z" />
                 </mask>
                 <g mask="url(#mask0)">
-                  <path
+                  <!-- <path
                     d="M51.9,-62.4C63.7,-52,67.2,-32.2,68.8,-13.5C70.5,5.2,70.4,22.9,62.2,34.8C54,46.7,37.7,52.9,21.5,58.5C5.3,64.1,-10.8,69.2,-27.4,66.9C-44,64.5,-61.1,54.8,-72,39.7C-82.9,24.6,-87.7,4.2,-82.1,-12.2C-76.4,-28.5,-60.4,-40.6,-44.9,-50.4C-29.5,-60.2,-14.8,-67.6,2.7,-70.8C20.1,-73.9,40.1,-72.8,51.9,-62.4Z"
                     transform="translate(100 115)"
-                  />
+                  /> -->
 
                   <!--==================== 
                                         Insert your image in the Img folder and Change your image |
@@ -131,7 +134,7 @@
                     class="home__blob-img"
                     x="1"
                     y="0"
-                    href="assets/img/avatar_home.svg"
+                    href="assets/img/w_logo.png"
                   />
                 </g>
               </svg>
@@ -141,29 +144,37 @@
               <h1 class="home__title">Hi, I'm Wasupon</h1>
               <h3 class="home__subtitle">Software Engineer</h3>
               <p class="home__description">
-                I am a passionate and results-driven software engineer. I have
-                experienced and worked on a variety of projects, including
-                websites, mobile apps, and managing containerized applications
-                for cloud deployment.
+                I am a software engineer living in Tokyo. I am passionate about
+                technology and developing software. I have experienced and
+                worked on a variety of projects, including websites, mobile
+                apps, and managing containerized applications for cloud
+                deployment.
               </p>
 
-              <a
+              <!-- <a
                 download=""
                 href="assets/pdf/Wasupon-CV.pdf"
                 class="button button--flex"
               >
                 Download CV <i class="uil uil-download-alt button__icon"></i>
+              </a> -->
+
+              <a href="#projects" class="button button--flex"> Projects </a>
+              &nbsp;&nbsp;
+
+              <a href="#contact" class="button button--white button--flex">
+                Contact
               </a>
             </div>
           </div>
 
-          <div class="home__scroll">
+          <!-- <div class="home__scroll">
             <a href="#skills" class="home__scroll-button button--flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
               <span class="home__scroll-name">Scroll down</span>
               <i class="uil uil-arrow-down home__scroll-arrow"></i>
             </a>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -220,7 +231,7 @@
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My technical level</span>
 
-        <div class="skills__container container grid">
+        <div class="skills__container container grid-skill">
           <div>
             <!--=============== SKILLS 1 ===============-->
             <div class="skills__content skills__open">
@@ -299,13 +310,13 @@
             </div>
 
             <!--=============== SKILLS 2 ===============-->
-            <div class="skills__content skills__close">
+            <div class="skills__content skills__open">
               <div class="skills__header">
-                <i class="uil uil-swatchbook skills__icon"></i>
+                <i class="uil uil-sync skills__icon"></i>
 
                 <div>
                   <h1 class="skills__title">CI/CD</h1>
-                  <span class="skills__subtitle">Version control</span>
+                  <span class="skills__subtitle">More than 1 year</span>
                 </div>
 
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -339,13 +350,25 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Azure DevOps</h3>
+                    <div>
+                      <img
+                        src="./assets/img/resume-icons/azure-devops.svg"
+                        width="32 px"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <div>
             <!--=============== SKILLS 3 ===============-->
-            <div class="skills__content skills__close">
+            <div class="skills__content skills__open">
               <div class="skills__header">
                 <i class="uil uil-server-network skills__icon"></i>
 
@@ -429,7 +452,7 @@
             </div>
 
             <!--=============== SKILLS 4 ===============-->
-            <div class="skills__content skills__close">
+            <div class="skills__content skills__open">
               <div class="skills__header">
                 <i class="uil uil-mobile-android skills__icon"></i>
 
@@ -464,6 +487,133 @@
                       />
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="projects__container container">
+          <div class="">
+            <!--=============== PORTFOLIO 1 ===============-->
+            <div class="projects__content grid">
+              <img
+                src="assets/img/projects1.jpg"
+                alt=""
+                class="projects__img"
+              />
+
+              <div class="projects__data">
+                <h3 class="projects__title">Modern Website</h3>
+                <p class="projects__description">
+                  Website adaptable to all devices, with ui components and
+                  animated interactions.
+                </p>
+
+                <div class="projects__button__container">
+                  <a
+                    href="https://property-pulse-five-opal.vercel.app/"
+                    target="_blank"
+                    class="button button projects__button"
+                  >
+                    Go to site
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <a
+                    href="https://property-pulse-five-opal.vercel.app/"
+                    target="_blank"
+                    class="button button--white projects__button"
+                  >
+                    Repository
+                    <i class="uil uil-github button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+            <br />
+
+            <!--=============== PORTFOLIO 2 ===============-->
+            <div class="projects__content grid">
+              <img
+                src="assets/img/projects2.jpg"
+                alt=""
+                class="projects__img"
+              />
+
+              <div class="projects__data">
+                <h3 class="projects__title">Brand Design</h3>
+                <p class="projects__description">
+                  Website adaptable to all devices, with ui components and
+                  animated interactions.
+                </p>
+
+                <div class="projects__button__container">
+                  <a
+                    href="https://property-pulse-five-opal.vercel.app/"
+                    target="_blank"
+                    class="button button projects__button"
+                  >
+                    Go to site
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <a
+                    href="https://property-pulse-five-opal.vercel.app/"
+                    target="_blank"
+                    class="button button--white projects__button"
+                  >
+                    Repository
+                    <i class="uil uil-github button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+            <br />
+
+            <!--=============== PORTFOLIO 3 ===============-->
+            <div class="projects__content grid">
+              <img
+                src="assets/img/projects3.jpg"
+                alt=""
+                class="projects__img"
+              />
+
+              <div class="projects__data">
+                <h3 class="projects__title">Online store</h3>
+                <p class="projects__description">
+                  Website adaptable to all devices, with ui components and
+                  animated interactions.
+                </p>
+
+                <div class="projects__button__container">
+                  <a
+                    href="https://property-pulse-five-opal.vercel.app/"
+                    target="_blank"
+                    class="button button projects__button"
+                  >
+                    Go to site
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <a
+                    href="https://property-pulse-five-opal.vercel.app/"
+                    target="_blank"
+                    class="button button--white projects__button"
+                  >
+                    Repository
+                    <i class="uil uil-github button__icon"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -608,267 +758,27 @@
         </div>
       </section>
 
-      <!--==================== SERVICES ====================-->
-      <section class="services section" id="services">
-        <h2 class="section__title">Services</h2>
-        <span class="section__subtitle">What i offer</span>
-
-        <div class="services__container container grid">
-          <!--=============== SERVICES 1 ===============-->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-web-grid services__icon"></i>
-              <h3 class="services__title">
-                Ui/Ux <br />
-                Designer
-              </h3>
-            </div>
-            <span
-              class="button button--flex button--small button--link services__button"
-            >
-              View More
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Ui/Ux <br />
-                  Designer
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I develop the user interface.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Web page development.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I create ux element interactions.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I position your company brand.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!--=============== SERVICES 2 ===============-->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-arrow services__icon"></i>
-              <h3 class="services__title">
-                Frontend <br />
-                Developer
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services__button"
-            >
-              View More
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Frontend <br />
-                  Developer
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I develop the user interface.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Web page development.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I create ux element interactions.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I position your company brand.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!--=============== SERVICES 3 ===============-->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-pen services__icon"></i>
-              <h3 class="services__title">
-                Branding <br />
-                Designer
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services__button"
-            >
-              View More
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Branding <br />
-                  Designer
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I develop the user interface.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Web page development.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I create ux element interactions.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I position your company brand.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Most recent work</span>
-
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <!--=============== PORTFOLIO 1 ===============-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/portfolio1.jpg"
-                alt=""
-                class="portfolio__img"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Modern Website</h3>
-                <p class="portfolio__description">
-                  Website adaptable to all devices, with ui components and
-                  animated interactions.
-                </p>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <!--=============== PORTFOLIO 2 ===============-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/portfolio2.jpg"
-                alt=""
-                class="portfolio__img"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Brand Design</h3>
-                <p class="portfolio__description">
-                  Website adaptable to all devices, with ui components and
-                  animated interactions.
-                </p>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <!--=============== PORTFOLIO 3 ===============-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/portfolio3.jpg"
-                alt=""
-                class="portfolio__img"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Online store</h3>
-                <p class="portfolio__description">
-                  Website adaptable to all devices, with ui components and
-                  animated interactions.
-                </p>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-
-      <!--==================== PROJECT IN MIND ====================-->
-      <section class="project section"></section>
-
-      <!--==================== TESTIMONIAL ====================-->
-
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
+        <br />
+        <span
+          class="section__subtitle"
+          style="font-size: 1.125rem; padding: 0 1rem"
+          >Feel free to contact me by
+          <span style="font-weight: bold">Email</span> or message me on
+          <span style="font-weight: bold">LinkedIn</span>. Check out my GitHub
+          for more projects!</span
+        >
 
         <div class="contact__container container grid">
           <div>
             <div class="contact__information">
-              <i class="uil uil-phone contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Call Me</h3>
-                <span class="contact__subtitle">999-777-666</span>
-              </div>
-            </div>
-
-            <div class="contact__information">
-              <i class="uil uil-envelope contact__icon"></i>
+              <a
+                href="mailto: wasupon.mail@gmail.com"
+                target="_blank"
+                class="uil uil-envelope contact__icon"
+              ></a>
               <div>
                 <h3 class="contact__title">Email</h3>
                 <span class="contact__subtitle">wasupon.mail@gmail.com</span>
@@ -876,49 +786,45 @@
             </div>
 
             <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
+              <a
+                href="https://www.linkedin.com/in/wasupon-p-90a991279/"
+                target="_blank"
+                class="uil uil-linkedin-alt contact__icon"
+              ></a>
               <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle"
-                  >Japan - Tokyo, Minato-ku, 100-1234</span
-                >
+                <h3 class="contact__title">LinkedIn</h3>
+                <span class="contact__subtitle">wasupon p</span>
               </div>
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
+          <div>
+            <div class="contact__information">
+              <a
+                href="https://github.com/wasupon0"
+                target="_blank"
+                class="uil uil-github-alt contact__icon"
+              ></a>
+              <div>
+                <h3 class="contact__title">GitHub</h3>
+                <span class="contact__subtitle"
+                  >https://github.com/wasupon0</span
+                >
               </div>
-              <div class="contact__content">
-                <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input" />
-              </div>
-            </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">Project</label>
-              <input type="text" class="contact__input" />
-            </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="7"
-                class="contact__input"
-              ></textarea>
             </div>
 
-            <div>
-              <a href="#" class="button button--flex">
-                Send Message
-                <i class="uil uil-message button__icon"></i>
-              </a>
+            <div class="contact__information">
+              <a
+                href="https://maps.app.goo.gl/qKzeMitPJDgFwDpQ9"
+                target="_blank"
+                class="uil uil-map-marker contact__icon"
+              ></a>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Japan - Tokyo</span>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
       </section>
     </main>
@@ -934,10 +840,13 @@
 
           <ul class="footer__links">
             <li>
-              <a href="#services" class="footer__link">Services</a>
+              <a href="#home" class="footer__link">Home</a>
             </li>
             <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
+              <a href="#skills" class="footer__link">Skills</a>
+            </li>
+            <li>
+              <a href="#projects" class="footer__link">Projects</a>
             </li>
             <li>
               <a href="#contact" class="footer__link">Contacts</a>
@@ -945,6 +854,13 @@
           </ul>
 
           <div class="footer__socials">
+            <a
+              href="mailto: wasupon.mail@gmail.com"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-envelope-alt"></i>
+            </a>
             <a
               href="https://www.linkedin.com/in/wasupon-p-90a991279/"
               target="_blank"
@@ -959,13 +875,6 @@
             >
               <i class="uil uil-github-alt"></i>
             </a>
-            <!--             <a
-              href="https://github.com/wasupon0"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-twitter-alt"></i>
-            </a> -->
           </div>
         </div>
 
@@ -979,9 +888,6 @@
     <a href="#" class="scrollup" id="scroll-top">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
-
-    <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
