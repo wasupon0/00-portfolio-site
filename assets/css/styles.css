@@ -359,7 +359,7 @@ img {
   color: #fff;
   display: inline-block;
   font-weight: var(--font-medium);
-  padding: 1rem;
+  padding: 0.75rem 2rem;
 }
 
 .button:hover {
