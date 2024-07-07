@@ -362,6 +362,42 @@ img {
   padding: 0.75rem 2rem;
 }
 
+/*========== BUTTONS PROJECT NEXT ==========*/
+
+#button--show,
+#button--hide {
+  align-self: center;
+  background-color: var(--first-color);
+  border: 2px solid var(--first-color);
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  padding: 0.75rem 2rem;
+}
+
+#button--show:hover,
+#button--hide:hover {
+  background-color: var(--first-color-alt);
+}
+
+.hide-project {
+  display: none;
+}
+
+.show-project {
+  display: grid;
+}
+
+/*========== BUTTONS PROJECT NEXT ==========*/
+
+.button__container {
+  display: flex;
+  justify-content: center;
+}
+
 .button:hover {
   background-color: var(--first-color-alt);
 }
