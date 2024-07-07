@@ -759,6 +759,11 @@ img {
   width: 100%;
 }
 
+.projects__img:hover {
+  cursor: pointer;
+  outline: 4px solid var(--first-color);
+}
+
 .projects__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
