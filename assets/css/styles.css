@@ -795,7 +795,8 @@ img {
   width: 100%;
 }
 
-.projects__img:hover {
+.projects__img:hover,
+.project__image__details:hover {
   cursor: pointer;
   outline: 4px solid var(--first-color);
 }
