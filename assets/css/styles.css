@@ -47,6 +47,11 @@
   --z-modal: 1000;
 }
 
+::selection {
+  background: #579ce0; /* Highlight color */
+  color: white; /* Text color within the highlight */
+}
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3rem;
@@ -781,8 +786,23 @@ img {
 }
 
 /*==================== PROJECTS ====================*/
+.img-outline {
+  outline: 1px solid #579ce0;
+}
+
+.projects__icon__container {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding-bottom: 1rem;
+}
+
 .projects__container {
+  max-width: 1200px;
   overflow: initial;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .projects__content {
@@ -797,6 +817,7 @@ img {
 
 .projects__img:hover,
 .project__image__details:hover {
+  border-color: transparent;
   cursor: pointer;
   outline: 4px solid var(--first-color);
 }
@@ -1166,7 +1187,7 @@ img {
   }
   .about__container,
   .skills__container,
-  .projects__content,
+  /* .projects__content, */
   .project__container,
   .contact__container,
   .footer__container {
@@ -1180,6 +1201,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .projects__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1275,7 +1300,7 @@ img {
     width: 450px;
   }
   .projects__img {
-    width: 320px;
+    /* width: 320px; */
   }
   .projects__content {
     align-items: center;
@@ -1331,7 +1356,7 @@ img {
     grid-template-columns: repeat(3, 238px);
   }
   .projects__content {
-    column-gap: 5rem;
+    column-gap: 1.5rem;
   }
   /* .swiper-portfolio-icon {
     font-size: 3.5rem;

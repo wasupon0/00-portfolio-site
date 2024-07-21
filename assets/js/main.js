@@ -205,20 +205,20 @@ themeButton.addEventListener("click", () => {
 });
 
 // Show more button
-const buttonShow = document.getElementById("btn--show");
-const buttonHide = document.getElementById("btn--hide");
-const projectNext = document.querySelectorAll(".hide-project");
-buttonHide.style.display = "none";
+// const buttonShow = document.getElementById("btn--show");
+// const buttonHide = document.getElementById("btn--hide");
+// const projectNext = document.querySelectorAll(".hide-project");
+// buttonHide.style.display = "none";
 
-buttonShow.addEventListener("click", () => {
-  projectNext.forEach((n) => n.classList.add("show-project"));
-  buttonShow.style.display = "none";
-  buttonHide.style.display = "flex";
-});
+// buttonShow.addEventListener("click", () => {
+//   projectNext.forEach((n) => n.classList.add("show-project"));
+//   buttonShow.style.display = "none";
+//   buttonHide.style.display = "flex";
+// });
 
-buttonHide.addEventListener("click", () => {
-  projectNext.forEach((n) => n.classList.remove("show-project"));
-  buttonShow.style.display = "flex";
-  buttonHide.style.display = "none";
-  window.location = "#projects";
-});
+// buttonHide.addEventListener("click", () => {
+//   projectNext.forEach((n) => n.classList.remove("show-project"));
+//   buttonShow.style.display = "flex";
+//   buttonHide.style.display = "none";
+//   window.location = "#projects";
+// });
