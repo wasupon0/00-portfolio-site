@@ -113,7 +113,7 @@ body.dark-theme {
   padding: 0 0.5rem;
 }
 
-.country__button:hover {
+.hover {
   background-color: #4387cb;
   color: white;
 }

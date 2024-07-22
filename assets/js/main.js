@@ -272,3 +272,12 @@ myLogo.addEventListener("click", () => {
     audioJapanese.play();
   }
 });
+
+// fix hover logic on mobile
+myLogo.addEventListener("touchstart", () => {
+  myLogo.classList.add("hover");
+});
+
+myLogo.addEventListener("touchend", () => {
+  myLogo.classList.remove("hover");
+});
