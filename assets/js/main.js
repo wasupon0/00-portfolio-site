@@ -274,10 +274,18 @@ myLogo.addEventListener("click", () => {
 });
 
 // fix hover logic on mobile
-myLogo.addEventListener("touchstart", () => {
-  myLogo.classList.add("hover");
+countryBtnElement.addEventListener("touchstart", () => {
+  countryBtnElement.classList.add("hover");
 });
 
-myLogo.addEventListener("touchend", () => {
-  myLogo.classList.remove("hover");
+countryBtnElement.addEventListener("touchend", () => {
+  countryBtnElement.classList.remove("hover");
+});
+
+countryBtnElement.addEventListener("mouseenter", () => {
+  countryBtnElement.classList.add("hover");
+});
+
+countryBtnElement.addEventListener("mouseleave", () => {
+  countryBtnElement.classList.remove("hover");
 });
