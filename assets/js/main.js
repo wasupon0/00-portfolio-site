@@ -222,3 +222,53 @@ themeButton.addEventListener("click", () => {
 //   buttonHide.style.display = "none";
 //   window.location = "#projects";
 // });
+
+// Change intro text on click
+const nameTextElement = document.getElementById("nameText");
+const jobTextElement = document.getElementById("jobText");
+const countryBtnElement = document.getElementById("countryBtn");
+const introTextElement = document.getElementById("introText");
+
+let isEnglish = false;
+
+countryBtnElement.addEventListener("click", () => {
+  if (isEnglish) {
+    nameTextElement.textContent = "Hi, I'm Wasupon";
+    jobTextElement.textContent = "Front-End Engineer";
+    introTextElement.textContent = `I am a front-end engineer based in Tokyo, passionate about
+    creating dynamic and responsive websites using React, Next.js,
+    and Tailwind CSS. With experience in various projects, including
+    websites, mobile apps, and cloud. I am dedicated to delivering
+    engaging and high-performance user experiences.`;
+
+    isEnglish = false;
+  } else {
+    nameTextElement.innerHTML = `こんにちは！<br/>ワスポンです。`;
+    jobTextElement.textContent = `フロントエンドエンジニア`;
+    introTextElement.textContent = `東京に住むフロントエンドエンジニアで、React、Next.js、およびTailwind
+    CSSを使用してダイナミックでレスポンシブWebデザインを作成することに情熱を持っています。ウェブサイト、モバイルアプリ、クラウドなど、さまざまなプロジェクトの経験があり、魅力的で高性能なユーザー体験を提供することに専念しています。`;
+
+    isEnglish = true;
+  }
+});
+
+// Play intro voice on logo click
+const myLogo = document.getElementById("myLogo");
+const audioEnglish = new Audio("assets/audio/my_intro_en.m4a");
+audioEnglish.volume = 0.35;
+const audioJapanese = new Audio("assets/audio/my_intro_jp.m4a");
+audioJapanese.volume = 0.35;
+
+myLogo.addEventListener("click", () => {
+  console.log(`myLogo click`);
+  audioEnglish.pause();
+  audioEnglish.currentTime = 0;
+  audioJapanese.pause();
+  audioJapanese.currentTime = 0;
+
+  if (!isEnglish) {
+    audioEnglish.play();
+  } else {
+    audioJapanese.play();
+  }
+});

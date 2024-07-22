@@ -78,6 +78,110 @@ body.dark-theme {
 }
 
 /*========== Button Dark/Light ==========*/
+
+/* my logo animation */
+
+.my_logo {
+  cursor: pointer;
+}
+
+.my_logo:hover::before,
+.my_logo:hover::after {
+  animation: 1s clockwise infinite;
+  background: #fda8cf;
+  border-radius: 100%;
+  content: "";
+  height: 10rem;
+  position: absolute;
+  width: 10rem;
+  z-index: -1;
+}
+
+.my_logo:hover:after {
+  animation: 2s counterclockwise infinite;
+  background: #f3ce5e;
+}
+
+@keyframes clockwise {
+  0% {
+    left: 0;
+    top: -5px;
+  }
+  12% {
+    left: 2px;
+    top: -2px;
+  }
+  25% {
+    left: 5px;
+    top: 0;
+  }
+  37% {
+    left: 2px;
+    top: 2px;
+  }
+  50% {
+    left: 0;
+    top: 5px;
+  }
+  62% {
+    left: -2px;
+    top: 2px;
+  }
+  75% {
+    left: -5px;
+    top: 0;
+  }
+  87% {
+    left: -2px;
+    top: -2px;
+  }
+  100% {
+    left: 0;
+    top: -5px;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    right: 0;
+    top: -5px;
+  }
+  12% {
+    right: 2px;
+    top: -2px;
+  }
+  25% {
+    right: 5px;
+    top: 0;
+  }
+  37% {
+    right: 2px;
+    top: 2px;
+  }
+  50% {
+    right: 0;
+    top: 5px;
+  }
+  62% {
+    right: -2px;
+    top: 2px;
+  }
+  75% {
+    right: -5px;
+    top: 0;
+  }
+  87% {
+    right: -2px;
+    top: -2px;
+  }
+  100% {
+    right: 0;
+    top: -5px;
+  }
+}
+
+/* my logo animation */
+
 .restart__button {
   background-color: #9e4d54;
   border-radius: 0.25rem;
@@ -97,6 +201,20 @@ body.dark-theme {
   border-radius: 0.25rem;
   color: white;
   padding: 0 0.5rem;
+}
+
+.country__button {
+  border: 2px solid #4387cb;
+  border-radius: 0.5rem;
+  color: #4387cb;
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+}
+
+.country__button:hover {
+  background-color: #4387cb;
+  color: white;
 }
 
 .nav__btns {
