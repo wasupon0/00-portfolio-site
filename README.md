@@ -1,5 +1,9 @@
-# 00-my-portfolio
+# My Portfolio Website
 
-This is my portfolio website
-It includes all the information about my work experiences
+This repository is my portfolio website.
+
+It includes all the information about my work experiences and personal projects.
+
 Go check my site at https://wasupon.page/
+
+## Section
