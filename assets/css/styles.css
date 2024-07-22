@@ -78,6 +78,27 @@ body.dark-theme {
 }
 
 /*========== Button Dark/Light ==========*/
+.restart__button {
+  background-color: #9e4d54;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 0 0.5rem;
+}
+
+.gameover__button {
+  background-color: #e74c3c;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 0 0.5rem;
+}
+
+.send__button {
+  background-color: #679e4d;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 0 0.5rem;
+}
+
 .nav__btns {
   align-items: center;
   display: flex;
