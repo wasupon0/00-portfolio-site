@@ -927,8 +927,8 @@ img {
 
 /*==================== PROJECT IN MIND ====================*/
 
-#project-01-diagram {
-  width: max-content;
+#project-01-diagram-div {
+  max-width: 100vh;
 }
 
 .project {
