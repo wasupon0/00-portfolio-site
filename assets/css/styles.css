@@ -954,6 +954,15 @@ img {
   width: 232px;
 }
 
+#project-02-play {
+  content: url("/assets/img/project-02-play-note.png");
+  cursor: help;
+}
+
+#project-02-play:hover {
+  content: url("/assets/img/project-02-play-note-hover.png");
+}
+
 /*==================== TESTIMONIAL ====================*/
 .testimonial__data,
 .testimonial__header {
