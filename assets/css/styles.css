@@ -959,7 +959,8 @@ img {
   cursor: help;
 }
 
-#project-02-play:hover {
+#project-02-play:hover,
+#project-02-play:active {
   content: url("/assets/img/project-02-play-note-hover.png");
 }
 
