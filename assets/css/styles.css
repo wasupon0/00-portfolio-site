@@ -926,6 +926,11 @@ img {
 }
 
 /*==================== PROJECT IN MIND ====================*/
+
+#project-01-diagram {
+  width: max-content;
+}
+
 .project {
   text-align: center;
 }

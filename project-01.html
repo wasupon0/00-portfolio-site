@@ -120,6 +120,34 @@
         <br />
 
         <div>
+          <h2 class="section__title">Tech Stack</h2>
+          <span class="section__subtitle"
+            >A diagram visually explain project design system</span
+          >
+
+          <div class="about__container container">
+            <div class="about__data"></div>
+
+            <img
+              id="project-01-diagram"
+              src="./assets/img/project-01-light.png"
+            />
+            <br /><br />
+
+            <p class="about__description">
+              The search feature allows you to search for apartments by using
+              keywords. You can search by city, how many minutes to train
+              station, and filter the price range.
+            </p>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div>
           <h2 class="section__title">Search By Keyword Feature</h2>
           <span class="section__subtitle">Easily search by using keywords</span>
 
@@ -350,5 +378,16 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+    <script>
+      // project-01: toggle dark/light diagram
+      const diagram01 = document.getElementById("project-01-diagram");
+      console.log(localStorage.getItem("selected-theme"));
+
+      if (localStorage.getItem("selected-theme") === "light") {
+        diagram01.src = "./assets/img/project-01-light.png";
+      } else {
+        diagram01.src = "./assets/img/project-01-dark.png";
+      }
+    </script>
   </body>
 </html>

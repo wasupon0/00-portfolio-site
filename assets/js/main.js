@@ -196,12 +196,22 @@ if (selectedTheme) {
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener("click", () => {
+  console.log(getCurrentTheme());
   // Add or remove the dark / icon theme
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+
+  // project-01: toggle dark/light diagram
+  if (getCurrentTheme() === "light") {
+    document.getElementById("project-01-diagram").src =
+      "./assets/img/project-01-light.png";
+  } else {
+    document.getElementById("project-01-diagram").src =
+      "./assets/img/project-01-dark.png";
+  }
 });
 
 // Show more button
@@ -273,7 +283,7 @@ myLogo.addEventListener("click", () => {
   }
 });
 
-// fix hover logic on mobile
+// project-02: fix hover logic on mobile
 countryBtnElement.addEventListener("touchstart", () => {
   countryBtnElement.classList.add("hover");
 });
