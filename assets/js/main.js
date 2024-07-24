@@ -259,8 +259,8 @@ let isEnglish = false;
 countryBtnElement.addEventListener("click", () => {
   if (isEnglish) {
     nameTextElement.textContent = "Hi, I'm Wasupon";
-    jobTextElement.textContent = "Front-End Engineer";
-    introTextElement.textContent = `I am a front-end engineer based in Tokyo, passionate about
+    jobTextElement.textContent = "Software Engineer";
+    introTextElement.textContent = `I am a software engineer based in Tokyo, passionate about
     creating dynamic and responsive websites using React, Next.js,
     and Tailwind CSS. With experience in various projects, including
     websites, mobile apps, and cloud. I am dedicated to delivering
@@ -269,8 +269,8 @@ countryBtnElement.addEventListener("click", () => {
     isEnglish = false;
   } else {
     nameTextElement.innerHTML = `こんにちは！<br/>ワスポンです。`;
-    jobTextElement.textContent = `フロントエンドエンジニア`;
-    introTextElement.textContent = `東京に住むフロントエンドエンジニアで、React、Next.js、およびTailwind
+    jobTextElement.textContent = `ソフトウェアエンジニア`;
+    introTextElement.textContent = `東京に住むソフトウェアエンジニアで、React、Next.js、およびTailwind
     CSSを使用してダイナミックでレスポンシブWebデザインを作成することに情熱を持っています。ウェブサイト、モバイルアプリ、クラウドなど、さまざまなプロジェクトの経験があり、魅力的で高性能なユーザー体験を提供することに専念しています。`;
 
     isEnglish = true;
