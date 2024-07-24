@@ -931,6 +931,14 @@ img {
   max-width: 100vh;
 }
 
+#project-02-diagram-div {
+  max-width: 100vh;
+}
+
+#project-03-diagram-div {
+  max-width: 100vh;
+}
+
 .project {
   text-align: center;
 }

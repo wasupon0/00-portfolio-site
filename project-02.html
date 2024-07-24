@@ -122,6 +122,47 @@
         <br />
 
         <div>
+          <h2 class="section__title">Tech Stack</h2>
+          <span class="section__subtitle"
+            >A diagram visually explain project design system</span
+          >
+
+          <div id="project-02-diagram-div" class="about__container container">
+            <img
+              id="project-02-diagram"
+              src="./assets/img/project-02-light.png"
+            />
+            <br /><br />
+            <br /><br />
+
+            <h3>Front-End</h3>
+            <p class="about__description">
+              RentFinder's front-end is built with Next.js, enabling fast,
+              SEO-friendly applications through server-side rendering and static
+              site generation. Tailwind CSS is used for rapid UI development
+              with a clean, maintainable codebase, ensuring a seamless user
+              experience for navigating listings and searching properties.
+            </p>
+
+            <h3>Public API</h3>
+            <p class="about__description">
+              The back-end of RentFinder leverages Next.js as a full-stack
+              solution, utilizing the App Router for intuitive and scalable page
+              routing and Route Handlers for managing API endpoints efficiently.
+              NextAuth.js is integrated for seamless Google authentication, and
+              middleware functions ensure secure and optimized request
+              processing, enhancing the overall robustness and security of the
+              application.
+            </p>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div>
           <h2 class="section__title">Select Question Feature</h2>
           <span class="section__subtitle"
             >Select type of questions you want to challenge</span
@@ -327,5 +368,16 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+    <script>
+      // project-02: toggle dark/light diagram
+      const diagram02 = document.getElementById("project-02-diagram");
+      console.log(localStorage.getItem("selected-theme"));
+
+      if (localStorage.getItem("selected-theme") === "light") {
+        diagram02.src = "./assets/img/project-02-light.png";
+      } else {
+        diagram02.src = "./assets/img/project-02-dark.png";
+      }
+    </script>
   </body>
 </html>

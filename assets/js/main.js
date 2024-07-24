@@ -204,13 +204,28 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 
-  // project-01: toggle dark/light diagram
+  // project diagram: toggle dark/light
+
+  const diagram01 = document.getElementById("project-01-diagram");
+  const diagram02 = document.getElementById("project-02-diagram");
+  const diagram03 = document.getElementById("project-03-diagram");
+
   if (getCurrentTheme() === "light") {
-    document.getElementById("project-01-diagram").src =
-      "./assets/img/project-01-light.png";
+    diagram01 !== null
+      ? (diagram01.src = "./assets/img/project-01-light.png")
+      : diagram02 !== null
+      ? (diagram02.src = "./assets/img/project-02-light.png")
+      : diagram03 !== null
+      ? (diagram03.src = "./assets/img/project-03-light.png")
+      : null;
   } else {
-    document.getElementById("project-01-diagram").src =
-      "./assets/img/project-01-dark.png";
+    diagram01 !== null
+      ? (diagram01.src = "./assets/img/project-01-dark.png")
+      : diagram02 !== null
+      ? (diagram02.src = "./assets/img/project-02-dark.png")
+      : diagram03 !== null
+      ? (diagram03.src = "./assets/img/project-03-dark.png")
+      : null;
   }
 });
 
@@ -283,7 +298,7 @@ myLogo.addEventListener("click", () => {
   }
 });
 
-// project-02: fix hover logic on mobile
+// Fix hover logic on mobile
 countryBtnElement.addEventListener("touchstart", () => {
   countryBtnElement.classList.add("hover");
 });
